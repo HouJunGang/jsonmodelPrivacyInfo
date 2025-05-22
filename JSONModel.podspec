@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'JSONModel/**/*.{m,h}'
+  s.resource_bundles = {'JSONModel' => ['JSONModel/PrivacyInfo.xcprivacy']}
   s.public_header_files = 'JSONModel/**/*.h'
 
   s.requires_arc = true
